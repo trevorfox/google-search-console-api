@@ -8,7 +8,7 @@ from apiclient.discovery import build
 # Script setup
 # Enter the URL for the site that you want to query as it is shown in Google Search Console
 # For this example, the ERROR_CATEGORY is used to query specific types of crawl errors
-SITE_URL = 'https://postmates.com/'
+SITE_URL = 'https://example.com/'
 ERROR_CATEGORY = 'notFound'
 
 # There are only two OAuth Scopes for the Google Search Console API

@@ -3,3 +3,4 @@
 config/*
 __pycache__/
 gsc/
+fake.json
