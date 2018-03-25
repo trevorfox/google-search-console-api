@@ -16,3 +16,5 @@ $ pip install -r requirements.txt
 $ python webmaster.py
 ```
 - Query and update all your data!
+
+Read more about [SEO with Python](https://trevorfox.com/2018/03/google-search-console-api-python-tutorial/)
