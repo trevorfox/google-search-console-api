@@ -25,7 +25,7 @@ REDIRECT_URI = 'urn:ietf:wg:oauth:2.0:oob'
 try:
     credentials = pickle.load(open("config/credentials.pickle", "rb"))
 except (OSError, IOError) as e:
-    flow = InstalledAppFlow.from_client_secrets_file('client_secret.json', scopes=OAUTH_SCOPE)
+    flow = InstalledAppFlow.from_client_secrets_file('config/client_secret.json', scopes=OAUTH_SCOPE)
     credentials = flow.run_console()
     pickle.dump(credentials, open("config/credentials.pickle", "wb"))
 
