@@ -3,7 +3,7 @@
 import pickle
 from checker import check
 from google_auth_oauthlib.flow import InstalledAppFlow
-from apiclient.discovery import build
+from googleapiclient.discovery import build
 
 # Script setup
 # Enter the URL for the site that you want to query as it is shown in Google Search Console
@@ -26,7 +26,7 @@ try:
     credentials = pickle.load(open("config/credentials.pickle", "rb"))
 except (OSError, IOError) as e:
     flow = InstalledAppFlow.from_client_secrets_file('config/client_secret.json', scopes=OAUTH_SCOPE)
-    credentials = flow.run_console()
+    credentials = flow.run_local_server()
     pickle.dump(credentials, open("config/credentials.pickle", "wb"))
 
 webmasters_service = build('webmasters', 'v3', credentials=credentials)
