@@ -9,11 +9,11 @@
 - Rename the file `client_secret.json` and place it in the `/config` directory
 - Install the required Python packages
 ```
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 - Run the script as a demo
 ```
-$ python webmaster.py
+$ python3 webmaster.py
 ```
 - Query and update all your data!
 
